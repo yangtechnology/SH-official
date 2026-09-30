@@ -43,7 +43,7 @@ if (form) {
     form.addEventListener('submit', function(e) {
         e.preventDefault(); 
         
-        if (GAS_WEB_APP_URL === 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE' || GAS_WEB_APP_URL === '') {
+        if (GAS_WEB_APP_URL === 'https://script.google.com/macros/s/AKfycbym64GIDREX5mMPMb-zzUxyViAEYYg-16Q1qcSYceyhhDNBpD-wiv-E0OplKgOlSdY0/exec' || GAS_WEB_APP_URL === '') {
             alert('開發提示：請先在 script.js 中設定您的 Google Apps Script Web App URL 才能順利送出表單！');
             return;
         }
