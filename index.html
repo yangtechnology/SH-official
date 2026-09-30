@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祥生聯合記帳士事務所 - 您的專業稅務管家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a', // 深邃的午夜藍
+                        secondary: '#1e293b', 
+                        accent: '#c49754',  // 香檳金，更加高雅與尊榮
+                        accentHover: '#a67c3f',
+                        lightbg: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'premium': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                        'gold': '0 4px 20px -2px rgba(196, 151, 84, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-lightbg text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Navbar (加入毛玻璃效果與精緻陰影) -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-[0_2px_20px_rgb(0,0,0,0.04)] sticky top-0 z-50 transition-all duration-300 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center text-primary font-bold text-2xl tracking-wide group">
+                        <div class="w-12 h-12 rounded-xl bg-slate-50 border border-slate-100 shadow-sm text-accent flex items-center justify-center mr-4 group-hover:bg-accent group-hover:text-white transition-all duration-500">
+                            <i class="fa-solid fa-scale-balanced text-2xl"></i>
+                        </div>
+                        <span class="tracking-widest">祥生聯合記帳士</span>
+                    </a>
+                </div>
+                <div class="hidden lg:flex items-center space-x-10">
+                    <a href="index.html" class="text-accent font-semibold transition border-b-2 border-accent pb-1">首頁</a>
+                    <a href="about.html" class="text-slate-500 hover:text-accent font-medium transition pb-1">關於我們</a>
+                    <a href="services.html" class="text-slate-500 hover:text-accent font-medium transition pb-1">服務項目</a>
+                    <a href="contact.html" class="bg-primary hover:bg-secondary text-white px-7 py-3 rounded-full font-medium transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-0.5">聯絡我們</a>
+                </div>
+                <!-- 手機版選單按鈕 -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-500 hover:text-accent focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 手機版選單 -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 shadow-2xl absolute w-full left-0">
+            <a href="index.html" class="block px-8 py-5 text-lg font-medium text-accent bg-slate-50 border-l-4 border-accent">首頁</a>
+            <a href="about.html" class="block px-8 py-5 text-lg font-medium text-slate-500 hover:bg-slate-50 hover:text-accent border-l-4 border-transparent">關於我們</a>
+            <a href="services.html" class="block px-8 py-5 text-lg font-medium text-slate-500 hover:bg-slate-50 hover:text-accent border-l-4 border-transparent">服務項目</a>
+            <a href="contact.html" class="block px-8 py-5 text-lg font-medium text-slate-500 hover:bg-slate-50 hover:text-accent border-l-4 border-transparent">聯絡我們</a>
+        </div>
+    </nav>
+
+    <!-- 主內容區 -->
+    <main class="flex-grow">
+        <!-- Hero Section (尊榮感漸層與徽章) -->
+        <section class="relative bg-primary overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover opacity-30 transform scale-105" alt="辦公大樓">
+                <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-transparent opacity-100"></div>
+            </div>
+            
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-48">
+                <div class="max-w-3xl" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="inline-flex items-center space-x-3 bg-white/5 rounded-full px-5 py-2.5 mb-10 border border-white/10 backdrop-blur-md">
+                        <span class="flex h-2.5 w-2.5 rounded-full bg-accent animate-pulse"></span>
+                        <span class="text-slate-300 text-sm font-medium tracking-widest">為新竹在地企業提供頂級稅務服務</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.15] mb-8 tracking-tight">
+                        精準務實<br>
+                        <span class="text-accent">為企業奠定穩固根基</span>
+                    </h1>
+                    <p class="text-xl text-slate-400 mb-12 leading-relaxed font-light max-w-2xl">
+                        位於新竹縣竹北市，多年來為當地中小企業與個人提供記帳、報稅及公司登記服務。我們掌握產業特性，依客戶需求提供客製化的財稅諮詢，協助您專注本業經營。
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        <a href="contact.html" class="inline-flex justify-center items-center bg-accent hover:bg-accentHover text-white font-semibold py-4 px-10 rounded-full transition-all duration-300 shadow-gold hover:shadow-lg text-lg transform hover:-translate-y-1 tracking-wide">
+                            立即預約諮詢
+                        </a>
+                        <a href="services.html" class="inline-flex justify-center items-center bg-transparent border border-slate-500 hover:border-white hover:bg-white hover:text-primary text-white font-semibold py-4 px-10 rounded-full transition-all duration-300 text-lg tracking-wide">
+                            了解服務項目
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Section (細緻陰影與浮動動畫) -->
+        <section class="py-24 bg-lightbg relative overflow-hidden">
+            <!-- 背景裝飾 -->
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-accent opacity-5 blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-primary opacity-5 blur-3xl"></div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="group bg-white p-10 rounded-2xl shadow-premium hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-slate-100/50" data-aos="fade-up" data-aos-delay="100">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-slate-50 text-accent mb-8 group-hover:bg-accent group-hover:text-white transition-colors duration-500">
+                            <i class="fa-solid fa-certificate text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 tracking-wide">國家考試合格</h3>
+                        <p class="text-slate-500 leading-relaxed">團隊具備國家考試合格記帳士證照，以最高標準的專業素養為您的財務嚴格把關。</p>
+                    </div>
+                    
+                    <div class="group bg-white p-10 rounded-2xl shadow-premium hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-slate-100/50" data-aos="fade-up" data-aos-delay="200">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-slate-50 text-accent mb-8 group-hover:bg-accent group-hover:text-white transition-colors duration-500">
+                            <i class="fa-solid fa-shield-halved text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 tracking-wide">絕對誠信保密</h3>
+                        <p class="text-slate-500 leading-relaxed">將客戶的商業機密視為最高指導原則，建立在互信基礎上的長期夥伴關係。</p>
+                    </div>
+                    
+                    <div class="group bg-white p-10 rounded-2xl shadow-premium hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-slate-100/50" data-aos="fade-up" data-aos-delay="300">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-slate-50 text-accent mb-8 group-hover:bg-accent group-hover:text-white transition-colors duration-500">
+                            <i class="fa-solid fa-handshake-angle text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 tracking-wide">專屬客製服務</h3>
+                        <p class="text-slate-500 leading-relaxed">針對不同產業與企業規模，提供量身打造的稅務與營運建議，陪伴企業一起成長。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-white border-t border-slate-100">
+            <div class="max-w-4xl mx-auto px-4 text-center" data-aos="zoom-in" data-aos-duration="1000">
+                <span class="text-accent font-semibold tracking-widest text-sm uppercase mb-4 block">Let's work together</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6 tracking-tight">準備好讓您的事業邁向下一個階段了嗎？</h2>
+                <p class="text-xl text-slate-500 mb-10 font-light">無論是剛起步的青創團隊，還是尋求轉型的中小企業，我們隨時準備為您服務。</p>
+                <a href="contact.html" class="inline-flex items-center justify-center bg-primary hover:bg-secondary text-white font-semibold py-4 px-12 rounded-full transition-all duration-300 text-lg shadow-premium hover:shadow-2xl hover:-translate-y-1 group">
+                    <span>開始聯絡我們</span>
+                    <i class="fa-solid fa-arrow-right ml-3 transform group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 頁尾 Footer (簡約高雅設計) -->
+    <footer class="bg-primary pt-20 pb-10 border-t-4 border-accent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+            <div class="md:col-span-5">
+                <p class="text-2xl font-bold text-white flex items-center mb-6 tracking-wide">
+                    <i class="fa-solid fa-scale-balanced mr-3 text-accent text-3xl"></i>
+                    祥生聯合記帳士事務所
+                </p>
+                <p class="text-slate-400 leading-relaxed mb-8 max-w-sm font-light">
+                    專業、誠信、用心的稅務夥伴。<br>為企業量身打造的全方位工商稅務服務。
+                </p>
+            </div>
+            <div class="md:col-span-3">
+                <h4 class="text-white font-semibold mb-6 tracking-widest text-sm uppercase">快速連結</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li><a href="index.html" class="hover:text-accent transition-colors flex items-center"><span class="w-2 h-2 rounded-full bg-accent/50 mr-3"></span>首頁</a></li>
+                    <li><a href="about.html" class="hover:text-accent transition-colors flex items-center"><span class="w-2 h-2 rounded-full bg-accent/50 mr-3"></span>關於我們</a></li>
+                    <li><a href="services.html" class="hover:text-accent transition-colors flex items-center"><span class="w-2 h-2 rounded-full bg-accent/50 mr-3"></span>服務項目</a></li>
+                    <li><a href="contact.html" class="hover:text-accent transition-colors flex items-center"><span class="w-2 h-2 rounded-full bg-accent/50 mr-3"></span>聯絡我們</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-4">
+                <h4 class="text-white font-semibold mb-6 tracking-widest text-sm uppercase">聯絡資訊</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li class="flex items-start"><i class="fa-solid fa-phone mt-1 mr-3 text-accent"></i> (03) 551-7014</li>
+                    <li class="flex items-start"><i class="fa-solid fa-envelope mt-1 mr-3 text-accent"></i> service@xiangsheng.com.tw</li>
+                    <li class="flex items-start"><i class="fa-solid fa-location-dot mt-1 mr-3 text-accent"></i> 302 新竹縣竹北市縣政二路430號</li>
+                    <li class="flex items-start pt-2 border-t border-slate-700/50 mt-4"><i class="fa-solid fa-clock mt-1 mr-3 text-slate-500"></i> 週一至週五 08:00 - 17:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800 text-center flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+            <p>© 2024 祥生聯合記帳士事務所. All rights reserved.</p>
+            <div class="mt-4 md:mt-0 space-x-6">
+                <a href="#" class="hover:text-white transition-colors">隱私權政策</a>
+                <a href="#" class="hover:text-white transition-colors">服務條款</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入 AOS 動畫 JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
